@@ -1,0 +1,21 @@
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 36px;
+}
+
+.menu a{
+    color: #fff;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+.menu a:hover{
+    color: #75c4da;
+
+}

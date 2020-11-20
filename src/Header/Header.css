@@ -1,0 +1,16 @@
+header{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgba(0, 0, 0, .4);
+    padding-right: 15px;
+}
+.header__logo img{
+    width: 90px;
+}
+
+.header__logo-name{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    transition: color 300ms;
+    cursor: default;
+}
