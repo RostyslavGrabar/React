@@ -1,20 +1,45 @@
-.goods__cart{
-    width: calc(20% - 20px);
-    float: left;
-    box-shadow: 3px 2px 20px -4px rgba(117,196,218,1);
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+.sectiom--goods{
+    margin-bottom: 40px;
 }
 
+.goods__cart{
+    width: calc(20% - 4px);
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.goods__cart:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 11px 6px rgba(0,0,0,.06);
+
+}
+
+
 .goods__cart:not(:nth-child(5n)){
-    margin-right: 25px;
+    margin-right: 5px;
 }
 
 .goods__cart h3{
     text-align: center;
-}
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
+}
+.link__goods__cart{
+    text-decoration: none;
+    color: #000;
+
+}
+.goods__info{
+    padding: 20px;
+
+}
+.goods__image{
+    margin: 20px 0;
+}
 .goods__image img{
     width: 100%;
 }
@@ -35,8 +60,65 @@
 .btn--view-goods a:hover{
     color: #4aa5be;
     background-color: rgba(0, 0, 0, .2);
-
+}
+.goods__name h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 .goods__name{
-    text-align: center;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.goods__name span{
+    color: #e95d2a;
+    margin-top: 15px;
+    padding-left: 5px;
+    min-height: 70px;
+}
+.goods__desc{
+    padding: 0;
+}
+.desc__title{
+    color: #666;
+}
+.goods__price{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.goods__count{
+    background-color: #bb6bd9;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    padding: 5px;
+}
+.btn--add-cart{
+    background-color: #e95d2a;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-self: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 300ms;
+}
+.btn--add-cart:hover{
+    background-color: #cc400d;
+}
+.btn--add-cart:active{
+    background-color: #6e2308;
+}
+.btn--add-cart:disabled{
+    background-color: #777271;
+}
+
+
+.add-cart__text{
+    margin-left: 10px;
 }

@@ -1,0 +1,142 @@
+{
+    "smartphone": {
+        "name": "Смартфони",
+        "goods": [
+            {
+                "id": 1,
+                "title": "Смартфон APPLE iPhone Xr 64GB Black (MRY42)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6423091.jpg",
+                "price": "18 999",
+                "description": {
+                    "Вбудована пам’ять Гб": "64",
+                    "Діагональ дисплея": "6.1\"",
+                    "Матриця": "IPS",
+                    "Основна камера": "12 Мп"
+                },
+                "count": "0"
+            },
+            {
+                "id": 2,
+                "title": "Смартфон XIAOMI Redmi Note 8 Pro 6/64 Gb Green",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6510733.jpg",
+                "price": "5 999",
+                "description": {
+                    "Оперативна пам'ять": "6144 Мб",
+                    "Діагональ дисплея": "6.53\"",
+                    "Матриця": "IPS",
+                    "Акумулятор": "4500 мАг"
+                },
+                "count": "6"
+            },
+            {
+                "id": 3,
+                "title": "Смартфон Samsung Galaxy M31 6/128GB Black (SM-M315FZKVSEK)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6548318.jpg",
+                "price": "7 299",
+                "description": {
+                    "Оперативна пам'ять": "6144 Мб",
+                    "Діагональ дисплея": "6.4\"",
+                    "Матриця": "SUPER AMOLED",
+                    "Акумулятор": "6000 мАг"
+                },
+                "count": "3"
+            },
+            {
+                "id": 4,
+                "title": "Смартфон HUAWEI P40 Lite 6/128 Gb Dual Sim Sakura Pink (51095CKA)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6556872.jpg",
+                "price": "7 499 ",
+                "description": {
+                    "Оперативна пам'ять": "6144 Мб",
+                    "Діагональ дисплея": "6.4\"",
+                    "Матриця": "IPS",
+                    "Акумулятор": "4200 мАг"
+                },
+                "count": "2"
+            },
+            {
+                "id": 5,
+                "title": "Смартфон HUAWEI P Smart 2021 4/128GB Crush Green (51096ABX)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6620187.jpg",
+                "price": "6 499",
+                "description": {
+                    "Оперативна пам'ять": "4096 Мб",
+                    "Діагональ дисплея": "6.67\"",
+                    "Матриця": "IPS",
+                    "Акумулятор": "5000 мАг"
+                },
+                "count": "10"
+            }
+        ]
+    },
+    "laptop": {
+        "name": "Ноутбуки",
+        "goods": [
+            {
+                "id": 6,
+                "title": "Ноутбук ACER Nitro 5 AN515-54 Black (NH.Q59EU.027)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6524697.jpg",
+                "price": "24 999",
+                "description": {
+                    "Діагональ дисплея":"15.6\"",
+                    "Кількість ядер":"4",
+                    "Об'єм ОЗП":"8 Гб",
+                    "Частота процесора":"2.4 ГГц"
+                },
+                "count": "7"
+            },
+            {
+                "id": 7,
+                "title": "Ноутбук DELL G5 15-5500 Space Black (G5500FI716S10D2070W-10BL)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6609580.jpg",
+                "price": "59 999",
+                "description": {
+                    "Діагональ дисплея":"15.6\"",
+                    "Кількість ядер":"6",
+                    "Об'єм ОЗП":"16 Гб",
+                    "Частота процесора":"2.6 ГГц"
+                },
+                "count": "0"
+            },
+            {
+                "id": 8,
+                "title": "Ноутбук ASUS VivoBook X571GT-BQ073 Star Black (90NB0NL1-M13470)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6624230.jpg",
+                "price": "19 999",
+                "description": {
+                    "Діагональ дисплея":"15.6\"",
+                    "Кількість ядер":"4",
+                    "Об'єм ОЗП":"8 Гб",
+                    "Частота процесора":"2.4 ГГц"
+                },
+                "count": "5"
+            },
+            {
+                "id": 9,
+                "title": "Ноутбук LENOVO L340-15IRH Gaming (81LK00BBRA)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6579848.jpg",
+                "price": "17 499",
+                "description": {
+                    "Діагональ дисплея":"15.6\"",
+                    "Кількість ядер":"4",
+                    "Об'єм ОЗП":"8 Гб",
+                    "Частота процесора":"2.4 ГГц"
+                },
+                "count": "3"
+            },
+            {
+                "id": 10,
+                "title": "Ноутбук HP Pavilion Gaming 16-a0001ua (28Z78EA)",
+                "image": "https://i1.foxtrot.com.ua/product/thumb/6624463.jpg",
+                "price": "37 999",
+                "description": {
+                    "Діагональ дисплея":"16.1\"",
+                    "Кількість ядер":"6",
+                    "Об'єм ОЗП":"16 Гб",
+                    "Частота процесора":"2.6 ГГц"
+                },
+                "count": "10"
+            }
+        ]
+    }
+}
