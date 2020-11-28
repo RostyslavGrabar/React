@@ -14,8 +14,20 @@
     text-decoration: none;
     transition: color 300ms;
 }
-
+.cart__num{
+    background-color: #e95d2a;
+    border-radius: 50%;
+    padding: 1px 5px 2px 5px;
+}
 .menu a:hover{
     color: #75c4da;
 
+}
+
+.icons{
+    color: #fff;
+}
+
+.icons__cart{
+    font-size: 1.5rem;
 }
