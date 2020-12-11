@@ -2,6 +2,9 @@ import React from 'react';
 import './CartRightBox.css';
 import { FiInfo } from 'react-icons/fi';
 import { FaShoppingCart } from 'react-icons/fa';
+import { connect} from 'react-redux';
+import { addGoodsToCart, newGoods, removeGoods } from '../../action';
+
 
 
 class CartRightBox extends React.Component {
@@ -15,8 +18,19 @@ class CartRightBox extends React.Component {
     static getDerivedStateFromProps(props, state) {
         return { goods: props.goods }
     }
+    addCart = (id) => {
+        return (event) => {
+            event.preventDefault();
+            this.props.addGoodsToCart(id);
+            let currentGoods = [];
+            localStorage.getItem('goods') && currentGoods.push(...JSON.parse(localStorage.getItem('goods')));
+            localStorage.setItem('goods', JSON.stringify([...currentGoods,id]));
+        }
+
+    }
 
     render() {
+        console.log(this.props)
         return (
             <div className="cart-box__right">
                 <div className="cart-box__right-info">
@@ -33,7 +47,26 @@ class CartRightBox extends React.Component {
                 <div className="cart-box__right-buy row row--center">
                     <span className="cart-box__right-buy-price">{this.state.goods.price} ₴</span>
                     <div className="cart-box__right-buy-btn">
-                        <button className="btn btn--buy row row--center"><FaShoppingCart /><span className="add-cart__text">Купити</span></button>
+                        {
+                            (this.state.goods.count > 0) ?
+                                (!this.state.goods.inCart) ?
+                                    <button
+                                        onClick={this.addCart(this.state.goods.id)}
+                                        className="btn btn--buy row row--center">
+                                        <FaShoppingCart /><span className="add-cart__text">Додати в корзину</span>
+                                    </button>
+                                    :
+                                    <button
+                                        onClick={this.addCart(this.state.goods.id)}
+
+                                        className="btn btn--buy row row--center"
+                                        disabled>
+                                        <FaShoppingCart />
+                                        <span className="add-cart__text">Товар в корзині</span>
+                                    </button>
+                                :
+                                <button className="btn btn--buy row row--center">Товар відсутній</button>
+                        }
                     </div>
                 </div>
                 <div className="cart-box__right-info cart-box__right-info--more">
@@ -54,4 +87,16 @@ class CartRightBox extends React.Component {
     }
 }
 
-export default CartRightBox;
+
+function mapStateToProps(state){
+    const {allGoods} = state;
+    return{allGoods: allGoods}
+}
+
+export default connect(
+    mapStateToProps,
+    {addGoodsToCart, newGoods, removeGoods}
+)(CartRightBox);
+
+
+// export default CartRightBox;

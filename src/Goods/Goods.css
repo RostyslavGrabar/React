@@ -114,10 +114,12 @@
 .btn--add-cart:active{
     background-color: #6e2308;
 }
-.btn--add-cart:disabled{
+.btn-disabled{
     background-color: #777271;
 }
-
+.btn-disabled:hover{
+    background-color: #777271;
+}
 
 .add-cart__text{
     margin-left: 10px;
