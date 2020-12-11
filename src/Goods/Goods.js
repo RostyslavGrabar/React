@@ -1,6 +1,5 @@
 import React from 'react';
 import './Goods.css';
-import * as goodsData from '../goods.json';
 import { FaShoppingCart } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
@@ -9,11 +8,13 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            goodsData: goodsData.default,
             cartCountGoods: 1
         }
     }
 
+    static getDerivedStateFromProps(props,state){
+        return {goodsData: props.goodsData.default }
+    }
     addCart = (event) => {
         event.preventDefault();
         const button = event.target.closest('button')
@@ -67,7 +68,7 @@ class Main extends React.Component {
                                             <div className=" goods__cart" key={elem.id}>
                                                 <NavLink to={"goods/" + elem.id} className="link__goods__cart" >
                                                     <div className="goods__info">
-                                                        <h3>{elem.title}</h3>
+                                                        <h3 title={elem.title}>{elem.title}</h3>
 
                                                         <div className="goods__image">
                                                             <img src={elem.image} alt="goods" />

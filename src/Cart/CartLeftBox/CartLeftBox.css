@@ -1,0 +1,72 @@
+.cart-box__left{
+    width: 40%;
+    border-right: 1px solid #f2f3f5;
+}
+.cart-box__left-img{
+    border-bottom: 1px solid #f2f3f5;
+}
+.cart-box__left-img img{
+    padding: 30px 0;
+    width: 80%;
+    margin: auto;
+}
+.cart-box__left-testimonials{
+    padding: 20px;
+}
+.testimonials__title{
+    color: #cc400d;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.testimonials__container{
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding:20px;
+}
+
+.testimonials__item{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding:10px;
+    border-bottom:  1px solid #f2f3f5;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    
+}
+
+.testimonials__item::-webkit-scrollbar
+{
+    background-color: #f2f3f5;
+    border-radius: 8px;
+    width: 7px;
+    overflow: hidden;
+}
+.testimonials__item::-webkit-scrollbar-thumb
+{
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.testimonials__item>*{
+    margin-bottom: 10px;
+} 
+.testimonials__raiting-icon{
+    color: #cc400d;
+}
+.testimonials__date{
+    color: #a19f9f;
+    margin-left: 30px;
+}
+.testimonials__content{
+    font-size: 0.85rem;
+}
+.testimonials__benefits{
+    font-size: 0.85rem;
+}
+.testimonials__benefits-left{
+    min-width: 20%;
+    font-weight: 600;
+}

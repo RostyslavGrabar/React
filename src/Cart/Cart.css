@@ -1,0 +1,18 @@
+.cart{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cart__title{
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+.cart-box{
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+/* left */
+
+/* right */
