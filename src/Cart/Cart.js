@@ -3,8 +3,6 @@ import './Cart.css';
 import CartLeftBox from './CartLeftBox/CartLeftBox';
 import CartRightBox from './CartRightBox/CartRightBox';
 
-
-
 class Cart extends React.Component {
     constructor(props) {
         super(props);
@@ -23,8 +21,6 @@ class Cart extends React.Component {
                 </div>
 
             </div>
-
-
         );
     }
 }

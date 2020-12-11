@@ -48,7 +48,9 @@
 .btn--buy:active{
     background-color: #6e2308;
 }
-
+.btn--buy:disabled{
+    background: #777271;;
+}
 .cart-box__right-info--more{
     margin-top: 20px;
 }

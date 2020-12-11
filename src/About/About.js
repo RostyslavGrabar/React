@@ -6,6 +6,11 @@ import { FaViber } from 'react-icons/fa';
 
 
 class About extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    }
+  }
   render() {
     return (
       <div className="about">
@@ -51,7 +56,7 @@ class About extends React.Component {
 
             <h3 className="contact-title">Контакти</h3>
             <div className="contact__list row row--center row--around">
-
+            
               <div className="contact__item">
                 <div className="contact__social row row--center"> 
                   <AiFillInstagram />
